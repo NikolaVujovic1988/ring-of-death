@@ -15,17 +15,11 @@ export class Game {
     }
 }
 
-function shuffle(this.stack) {
-    let currentIndex = this.stack.length,  randomIndex;
-  
-    while (currentIndex > 0) {
-  
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex--;
-  
-      [array[currentIndex], array[randomIndex]] = [
-        array[randomIndex], array[currentIndex]];
+function shuffle<T>(array: T[]): T[] {
+    const length = array.length;
+    for (let i = length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
     }
-  
     return array;
   }
