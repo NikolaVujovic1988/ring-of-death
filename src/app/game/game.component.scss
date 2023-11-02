@@ -12,7 +12,8 @@
     position: relative;
     img {
         position: absolute;
-        width: 120px;
+        width: 160px;
+        height: 260px;
     }
 }
 
@@ -20,13 +21,13 @@
     cursor: pointer;
     transition: all 125ms ease-in-out;
     &:hover {
-        transform: scale(1.05) translateY(-10px);
+        transform: scale(1.05);
     }
 }
 
 .pick-card {
     animation: pick-card-animation 1s ease-in-out;
-    transform: scale(1.1) translateX(140px) translateY(-180px) rotate(-15deg);
+    transform: scale(1) translateX(140px) translateY(-280px) rotate(-15deg);
 
 }
 
@@ -35,15 +36,15 @@
         transform: scale(1);
     }
     40% {
-        transform: scale(1.5);
+        transform: scale(1.2);
 
     }
     60% {
-        transform: scale(1.5);
+        transform: scale(1.2);
 
     }
     100% {
-        transform: scale(1.1) translateX(140px) translateY(-180px) rotate(-15deg);
+        transform: scale(1) translateX(140px) translateY(-280px) rotate(-15deg);
 
     }
 }
