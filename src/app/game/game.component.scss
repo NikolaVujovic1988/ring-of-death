@@ -25,6 +25,11 @@
     }
 }
 
+.played-card {
+    right: 25px;
+    transform: scale(1) translateX(140px) translateY(-280px) rotate(-15deg);
+}
+
 .pick-card {
     animation: pick-card-animation 1s ease-in-out;
     transform: scale(1) translateX(140px) translateY(-280px) rotate(-15deg);
