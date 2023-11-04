@@ -57,9 +57,6 @@
 .players-position {
     position: absolute;
     right: 0;
-    background-color: orange;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
 
 }
 
@@ -67,4 +64,11 @@
     position: absolute;
     bottom: 32px;
     right: 32px;
+}
+
+.card-bottom {
+    position: absolute;
+    bottom: 32px;
+    left: 100px;
+    right: 100px;
 }
